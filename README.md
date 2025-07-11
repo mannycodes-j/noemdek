@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎨 Frontend Developer Test — My Project
 
-## Getting Started
+Hey! 👋 This is my submission for the Frontend Developer Test. The goal here was simple:  
+Take the provided Figma design and bring it to life using **Next.js with TypeScript**.
 
-First, run the development server:
+I built this project using **shadcn/ui** for the UI components and **Tailwind CSS** for styling (love the flexibility it gives!).  
+For the charts, I decided to mix it up a bit — I used both **Chart.js** and **Recharts** to show different kinds of data visualizations.
+
+---
+
+## 📄 Project Description
+
+This is a fully responsive web project where I carefully replicated the provided Figma design. It works smoothly across desktop and tablet screens. The app includes interactive elements like buttons and charts, all functional and neatly styled with Tailwind CSS + shadcn/ui components.
+
+Charts were added using **Chart.js** for simple graphs and **Recharts** for more advanced and responsive ones.
+
+---
+
+## 🔗 Live Demo (Vercel)
+
+[👉 Click here to see the live site on Vercel](https://your-vercel-link.vercel.app)
+
+---
+
+## 🛠️ Tech Stack
+
+Here’s everything I used:
+
+- **Next.js (with TypeScript)** – For the app framework and routing.
+- **Tailwind CSS** – For styling and layout.
+- **shadcn/ui** – Pre-built, accessible UI components based on Tailwind and Radix UI.
+- **Chart.js** – For lightweight, simple charts.
+- **Recharts** – For more advanced, interactive charts.
+- **clsx** – To handle conditional class names easily.
+
+---
+## 📦 External Libraries & Tools
+I used some external libraries/tools to make this project cleaner and more functional.  
+| Library      Purpose                                    
+|--------------------------------------------------------
+| `next`        Framework for server-side rendering & routing 
+| `typescript`  Static typing for safer development        
+| `tailwindcss`  Utility-first CSS framework              
+| `shadcn/ui`   UI components (built on Radix UI + Tailwind CSS) 
+| `chart.js`    Lightweight charts                          
+| `recharts`    Advanced, responsive charts                
+| `clsx`        Utility for conditional classNames         
+
+## 📐 My Assumptions & Design Decisions
+
+- **Responsiveness:** Focused mainly on desktop and tablet views, since that was the requirement.
+- I used **mock data** for the charts and some sections, as the main goal was layout & interactivity.
+- For charts, I wanted to show flexibility, so I combined two libraries — each handles different scenarios well.
+- Kept things simple with local state and hooks; no need for external state management here.
+- I intentionally kept the design minimal and clean, closely following the Figma file’s spacing, colors, and typography.
+- Styling is fully handled by **Tailwind CSS** 
+
+---
+
+
+---
+
+## 🏃‍♂️ Run Locally
+
+If you'd like to run this project on your machine:
 
 ```bash
+# Clone the project
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
+
+# Install dependencies
+npm install
+
+# Start the dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
