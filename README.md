@@ -57,9 +57,6 @@ I used some external libraries/tools to make this project cleaner and more funct
 
 ---
 
-
----
-
 ## 🏃‍♂️ Run Locally
 
 If you'd like to run this project on your machine:
