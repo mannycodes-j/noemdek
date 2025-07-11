@@ -18,7 +18,7 @@ Charts were added using **Chart.js** for simple graphs and **Recharts** for more
 
 ## 🔗 Live Demo (Vercel)
 
-[👉 Click here to see the live site on Vercel](https://your-vercel-link.vercel.app)
+[👉 Click here to see the live site on Vercel](https://noemdek-one.vercel.app/)
 
 ---
 
@@ -63,7 +63,7 @@ If you'd like to run this project on your machine:
 
 ```bash
 # Clone the project
-git clone https://github.com/your-username/your-repo.git
+git clone https://github.com/mannycodes-j/noemdek
 cd your-repo
 
 # Install dependencies
