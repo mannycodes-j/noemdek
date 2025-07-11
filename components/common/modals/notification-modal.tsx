@@ -367,7 +367,7 @@ export function NotificationModal({ isOpen, onClose }: NotificationModalProps) {
                             <span className="text-teal-400 transition-all duration-300 ease-out group-hover:text-teal-300">
                               Aliyu Tosin
                             </span>{" "}
-                            to the La'organisation
+                            to the organisation
                           </>
                         ) : notification.title.includes("₦500/Liter") ? (
                           <>

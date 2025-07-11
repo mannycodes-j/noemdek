@@ -56,18 +56,7 @@ export function ReportWidget({
     { commodity: 'ICE', dateRange: 'Jul 22-26' },
   ]
 
-  const DocumentIcon = () => (
-    <div className="w-8 h-10 bg-white rounded-sm flex items-center justify-center relative shadow-sm">
-      <div className="w-6 h-8 bg-gray-100 rounded-sm border border-gray-300 relative">
-        {/* Document lines simulation */}
-        <div className="absolute top-1 left-1 right-1 space-y-0.5">
-          <div className="h-0.5 bg-gray-400 rounded"></div>
-          <div className="h-0.5 bg-gray-400 rounded w-3/4"></div>
-          <div className="h-0.5 bg-gray-400 rounded w-1/2"></div>
-        </div>
-      </div>
-    </div>
-  )
+ 
 
   const ReportSection = ({
     title,

@@ -3,9 +3,9 @@
 import { Card } from "@/components/ui/card"
 import { SizeSelector } from "@/components/common/button/size-selector"
 import type { FlightData } from "@/lib/types/types"
-import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, Legend } from "recharts"
+import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer} from "recharts"
 import { Plane } from "lucide-react"
-import { FlightWidget as DashboardFlightWidget } from "@/components/layout/dashboard/flight-widget"
+
 
 
 interface FlightWidgetProps {
@@ -17,71 +17,7 @@ interface FlightWidgetProps {
 }
 
 export function FlightWidget({ data, selectedWidget, selectedSize, onWidgetSelect, onSizeChange }: FlightWidgetProps) {
-  const flightChartOptions = {
-    chart: {
-      type: "bar" as const,
-      height: selectedSize === "S" ? 200 : selectedSize === "M" ? 120 : 160,
-      background: "transparent",
-      toolbar: { show: false },
-    },
-    plotOptions: {
-      bar: {
-        horizontal: false,
-        columnWidth: "60%",
-        borderRadius: 4,
-      },
-    },
-    dataLabels: { enabled: false },
-    stroke: { show: true, width: 2, colors: ["transparent"] },
-    xaxis: {
-      categories: data.map((item) => item.date),
-      labels: {
-        style: { colors: "#9CA3AF", fontSize: "12px" },
-        show: selectedSize !== "M",
-      },
-      axisBorder: { show: false },
-      axisTicks: { show: false },
-    },
-    yaxis: {
-      labels: {
-        style: { colors: "#9CA3AF", fontSize: "12px" },
-        formatter: (val: number) => val / 1000 + "k",
-        show: selectedSize !== "M",
-      },
-      min: 100000,
-      max: 600000,
-    },
-    fill: { opacity: 1 },
-    colors: ["#3B82F6", "#F59E0B"],
-    legend: {
-      show: selectedSize === "S",
-      position: "bottom",
-      labels: { colors: "#9CA3AF" },
-    },
-    grid: {
-      borderColor: "#374151",
-      strokeDashArray: 1,
-      show: selectedSize !== "M",
-    },
-    tooltip: {
-      theme: "dark",
-      y: { formatter: (val: number) => val.toLocaleString() + " flights" },
-    },
-  }
-
-  const flightChartSeries = [
-    { name: "International", data: data.map((item) => item.international) },
-    { name: "Domestic", data: data.map((item) => item.domestic) },
-  ]
-
-  const airportData = [
-    { name: "Murtala Mohammed I.", flights: "12,489 flights" },
-    { name: "Nnamdi Azikiwe Inter.", flights: "934,483 flights" },
-    { name: "Mallam Aminu Kano I.", flights: "10,722 flights" },
-    { name: "Port Harcourt Interna.", flights: "9,823 flights" },
-    { name: "Akanu Ibiam Interna.", flights: "489 flights" },
-    { name: "Murtala Muhamma.", flights: "88 flights" },
-  ]
+  
 
   const extendedAirportData = [
     { name: "Murtala Mohammed International Airport", flights: "12,489 flights" },

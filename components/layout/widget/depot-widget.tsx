@@ -57,10 +57,10 @@ interface DepotWidgetProps {
 }
 
 export function DepotWidget({ selectedWidget, selectedSize, onWidgetSelect, onSizeChange }: DepotWidgetProps) {
-  const timeSeriesData = getTimeSeriesData(["Lagos"], "PMS")
+  
 
   const commodities = ["PMS", "AGO", "DPK", "ICE", "LPG"]
-  const activeCommodity = "PMS"
+ 
   const [selectedCommodity, setSelectedCommodity] = useState(commodities[0]);
 
   const depotDataMedium = [

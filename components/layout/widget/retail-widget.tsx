@@ -60,51 +60,7 @@ export function RetailWidgets({
 
   const timeSeriesData = getTimeSeriesData(['Lagos'], 'PMS')
 
-  const getChartOptions = (size: 'S' | 'M' | 'L') => {
-    return {
-      chart: {
-        type: 'line' as const,
-        height: size === 'S' ? 60 : size === 'M' ? 100 : 140,
-        sparkline: { enabled: size === 'S' },
-        background: 'transparent',
-        toolbar: { show: false },
-      },
-      stroke: { curve: 'smooth' as const, width: 2, colors: ['#10b981'] },
-      fill: {
-        type: 'gradient',
-        gradient: {
-          shadeIntensity: 1,
-          opacityFrom: 0.3,
-          opacityTo: 0.1,
-          stops: [0, 100],
-          colorStops: [
-            { offset: 0, color: '#10b981', opacity: 0.3 },
-            { offset: 100, color: '#10b981', opacity: 0.1 },
-          ],
-        },
-      },
-      grid: { show: size !== 'S', borderColor: '#374151', strokeDashArray: 1 },
-      xaxis: {
-        labels: {
-          show: size === 'L',
-          style: { colors: '#9CA3AF', fontSize: '10px' },
-        },
-        axisBorder: { show: false },
-        axisTicks: { show: false },
-      },
-      yaxis: {
-        labels: {
-          show: size === 'L',
-          style: { colors: '#9CA3AF', fontSize: '10px' },
-        },
-      },
-      tooltip: { enabled: false },
-    }
-  }
-
-  const chartSeries = [
-    { name: 'PMS', data: timeSeriesData.slice(-10).map((item) => item.y) },
-  ]
+  
 
   const baseClasses =
     'bg-[#404040] rounded-lg p-4 cursor-pointer transition-all hover:bg-gray-750 border-2'
