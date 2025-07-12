@@ -1,6 +1,6 @@
 # 🎨 Frontend Developer Test — My Project
 
-Hey! 👋 This is my submission for the Frontend Developer Test. The goal here was simple:  
+Hello! 👋 This is my submission for the Frontend Developer Test. The goal here was simple:  
 Using **Next.js with TypeScript**.
 
 I built this project using **shadcn/ui** for the UI components and **Tailwind CSS** for styling (love the flexibility it gives!).  
